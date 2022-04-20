@@ -1,0 +1,103 @@
+.intro{
+    background-color: #c8bdb3;
+}
+.navbar {
+    padding: 8px;
+  }
+  .navbar-nav li{
+    padding-right: 5px;
+    font-family: 'Poppins';
+  }
+.About{
+    background-color: #7b5534;
+}
+.text p{
+    font-size: 40px;
+    color: #7b5534;
+    margin-left: 10%;
+
+}
+.text h2{
+    margin-left: 10%;
+
+}
+.About p{
+    color:  white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.About h2{
+
+    color:  white;
+
+
+}
+.skills{
+
+    background-color: white;
+}
+.img{
+    height: 300px;
+    width: 300px;
+}
+
+
+.img2 col-3 {
+    height: 500px;
+    width: 300px;
+
+}
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p"
+    "gallery-h2 gallery-h2"
+    "img1 img2"
+    "img3 img4";
+}
+#index-gallery .gallery-img{
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    cursor: pointer;
+}
+.About{
+    margin-top: 20px;
+}
+#index-gallery p{
+    grid-area: gallery-p;
+}
+#index-gallery h2{
+    grid-area: gallery-h2;
+}
+#index-gallery .img1{
+    grid-area: img1;
+    background-image: url("./img/img2.png");
+}
+#index-gallery .img2{
+    grid-area: img2;
+    background-image: url("./img/img3.png");
+}
+#index-gallery .img3{
+    grid-area: img3;
+    background-image: url("./img/img4.png");
+}
+#index-gallery .img4{
+    grid-area: img4;
+    background-image: url("./img/img5.png");
+}
+.skills h2{
+    margin-left: 10%;
+}
+.skills p{
+    margin-left: 10%;
+}
+.skills h3{
+    margin-left: 10%;
+}
