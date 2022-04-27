@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Courses</title>
+</head>
+<body>
+
+    <div class="shadow-sm sticky-top bg-light">
+    <nav class="navbar container-lg px-4 navbar-expand-sm navbar-light">
+        <a class="navbar-brand font-weight-bolder" href="index.html">
+            <img src="img/logo.png" width="40" height="40" alt="">
+            Academy
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#intro">Intro</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="Courses.html">Courses</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    
+    <div class="container-lg">
+        
+        <div class="row py-2 px-3" id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn active" onclick="filterSelection('programming')">Programming</button>
+            <button class="btn active" onclick="filterSelection('history')">History</button>
+            <button class="btn active" onclick="filterSelection('math')">Mathematics</button>
+        </div>
+        
+        <div class="cont-container">
+
+            <div class="filterDiv programming row py-1 px-1">
+                <div class="p-4 col-lg-3 col-md-3 col-sm-12">
+                    <img class="img-fluid" src="img/img1.png" alt="img1">
+                </div>
+                <div class=" p-4 col-lg-9 col-md-9 col-sm-12">
+                    <h3 class="display-6 font-weight-bolder">
+                        Course Title #1 Programming
+                    </h3>
+                    <p class="py-6 fs-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex non sequi quod dolorum laboriosam voluptate iure at. Ea labore excepturi cum odit. Ducimus animi modi, assumenda enim aspernatur ratione amet quis dolores, fugit officiis doloribus eligendi iusto aperiam ad architecto est quisquam possimus, magnam dolore ullam! Debitis amet fuga aspernatur?
+                    </p>
+                </div>
+            </div>
+
+            <div class="filterDiv history row py-1 px-1">
+                <div class="p-4 col-lg-3 col-md-3 col-sm-12">
+                    <img class="img-fluid" src="img/img1.png" alt="img1">
+                </div>
+                <div class=" p-4 col-lg-9 col-md-9 col-sm-12">
+                    <h3 class="display-6 font-weight-bolder">
+                        Course Title #2 History
+                    </h3>
+                    <p class="py-6 fs-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex non sequi quod dolorum laboriosam voluptate iure at. Ea labore excepturi cum odit. Ducimus animi modi, assumenda enim aspernatur ratione amet quis dolores, fugit officiis doloribus eligendi iusto aperiam ad architecto est quisquam possimus, magnam dolore ullam! Debitis amet fuga aspernatur?
+                    </p>
+                </div>
+            </div>
+
+            <div class="filterDiv math row py-1 px-1">
+                <div class="p-4 col-lg-3 col-md-3 col-sm-12">
+                    <img class="img-fluid" src="img/img1.png" alt="img1">
+                </div>
+                <div class=" p-4 col-lg-9 col-md-9 col-sm-12">
+                    <h3 class="display-6 font-weight-bolder">
+                        Course Title #3 Math
+                    </h3>
+                    <p class="py-6 fs-3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex non sequi quod dolorum laboriosam voluptate iure at. Ea labore excepturi cum odit. Ducimus animi modi, assumenda enim aspernatur ratione amet quis dolores, fugit officiis doloribus eligendi iusto aperiam ad architecto est quisquam possimus, magnam dolore ullam! Debitis amet fuga aspernatur?
+                    </p>
+                </div>
+            </div>
+ 
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+            }
+        }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1); 
+            }
+        }
+        element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+        }
+
+
+
+    </script>
+</body>
+</html>
